@@ -1,15 +1,14 @@
 ---
+title: "Git Basics"
 layout: post
-title: Git Basics
-subtitle: Comandos Básicos para atualizar repositórios do GitHub
-
-thumbnail-img: /assets/img/posts/github_icon.png
-share-img: /assets/img/posts/github_big.png
-cover-img: /assets/img/posts/github_big.png
-
-comments: true
-language: pt-br
 tags: [linux, git, github, gitpages]
+#subtitle: Comandos Básicos para atualizar repositórios do GitHub
+#thumbnail-img: /assets/img/posts/github_icon.png
+#share-img: /assets/img/posts/github_big.png
+#cover-img: /assets/img/posts/github_big.png
+#comments: true
+#language: pt-br
+
 ---
 
 O **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>** é uma plataforma de hospedagem de código-fonte com controle de versão usando o **<a title="Link do Git" href="https://git-scm.com/" target="_blank">Git</a>**. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou _Open Source_ de qualquer lugar do mundo.
