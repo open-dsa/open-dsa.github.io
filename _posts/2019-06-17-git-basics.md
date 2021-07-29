@@ -1,7 +1,7 @@
 ---
 title: "Git Basics"
-layout: post
 tags: [linux, git, github, gitpages]
+#layout: post
 #subtitle: Comandos Básicos para atualizar repositórios do GitHub
 #thumbnail-img: /assets/img/posts/github_icon.png
 #share-img: /assets/img/posts/github_big.png
