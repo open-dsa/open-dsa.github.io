@@ -87,6 +87,8 @@ kernel.execute(command);
 #ipynb_pathname
 ```
 
+
+
 ## Com função
 
 Usei uma função que peguei na, provavelmente [aqui](https://github.com/jupyter/notebook/issues/1000), para pegar o nome do arquivo *.ipynb*. Atualmente preferi, nas funões que necessitam do nome do arquivo, em escreve-lo como uma constante... evitando o uso do *java* dentro do *Juptyter Notebook*.
