@@ -1,6 +1,8 @@
 ---
 title: "GSpread"
+excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package, gspread]
+
 #layout: post
 #subtitle: Exercícios e Referências
 #thumbnail-img: /assets/img/posts/gspread_icon.png
@@ -14,6 +16,8 @@ tags: [python, pycharm, jupyter, package, gspread]
 ---
 
 O <a title="Link do GSpread" href="https://gspread.readthedocs.io/en/latest/api.html" target="_blank">**_GSpread_**</a> é um pacote que possibilita a edição e obtenção de dados das planilhas do  _Google SpreadSheet_, utilizando _Python_. Ou seja, é possível manipular os dados utiliznado toda uma variedade de _packages_ do _Python_ e inseri-los em _Google Spreadsheets_.
+
+<!--more-->
 
 Outro pacote relevante para trabalhar junto é o <a title="Link do df2gspread" href="https://df2gspread.readthedocs.io/en/latest/index.html" target="_blank">**_df2gspread_**</a>, que lê a tabela no formado do **_Pandas_**.
 

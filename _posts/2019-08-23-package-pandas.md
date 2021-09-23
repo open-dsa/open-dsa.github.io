@@ -1,6 +1,8 @@
 ---
-title: "Pandas e Geopandas"
+title: "Pandas"
+excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package, pandas]
+
 #layout: post
 #subtitle: Exercícios e Referências
 #thumbnail-img: /assets/img/posts/pandas_icon.png
@@ -13,6 +15,8 @@ tags: [python, pycharm, jupyter, package, pandas]
 ---
 
 O <a title="Link do Pandas" href="https://pandas.pydata.org/" target="_blank">**_Pandas_**</a> é um pacote que possibilita o manejo dos dados.
+
+<!--more-->
 
 {: .alert .alert-danger}
 **Aviso:** Esse _post_ tem a finalidade de mostrar os comandos básicos e me deixar com uma "cola" rápida para meu uso cotidiano. Todas os códigos são exemplificativos e podem/devem ser alterados, indicando o nome dos arquivos e diretórios corretamente.
@@ -54,7 +58,7 @@ tab.head(2)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -138,7 +142,7 @@ tab
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -254,7 +258,7 @@ tab
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -499,7 +503,7 @@ tab
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -706,9 +710,9 @@ tab['neighborhood'] = tab['neighborhood'].str.strip()
 ```
 
     ---------------------------------------------------------------------------
-
+    
     KeyError                                  Traceback (most recent call last)
-
+    
     ~/miniconda/envs/pablocarreira-py36/lib/python3.6/site-packages/pandas/core/indexes/base.py in get_loc(self, key, method, tolerance)
        2896             try:
     -> 2897                 return self._engine.get_loc(key)
@@ -729,11 +733,14 @@ tab['neighborhood'] = tab['neighborhood'].str.strip()
 
     KeyError: 'neighborhood'
 
-​  
-​ During handling of the above exception, another exception occurred:
+  
+
+
+
+ During handling of the above exception, another exception occurred:
 
     KeyError                                  Traceback (most recent call last)
-
+    
     <ipython-input-19-6cc4e27805a5> in <module>
           4
           5 # Remove espaços em branco de uma determinada coluna

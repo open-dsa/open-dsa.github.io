@@ -1,6 +1,8 @@
 ---
 title: "Jupyter Notebook"
+excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package]
+
 #layout: post
 #subtitle: Exercícios e Referências
 #thumbnail-img: /assets/img/posts/jupyter_icon.png
@@ -14,6 +16,9 @@ tags: [python, pycharm, jupyter, package]
 ---
 
 O *Jupyter Notebook* é a maneira que optei para escrever os códigos na linguagem *python*, visto que além de rodar os códigos, é possível:
+
+<!--more-->
+
 1. Documentar os *scripts*, escrevendo o significado e objetivo de cada conjunto de comandos;
 2. Atualizar os meus repositórios na plataforma **GitHub**;
 3. Trabalhar com uma diversidade de opções de exportação do arquivo em formatos diversos, adaptados até mesmo para as simples leitura, como PDFs e Markdowns.
@@ -430,38 +435,6 @@ def git_full(repo, files, msg):
     print('Done!!')
     return
 
-```
-
-# *Requirements*
-
-O arquivo *requirements.txt*, usualmente localizado na pasta-raiz do projeto, tem a finalidade de listar quais são os *packages* (ou pacotes) que foram utilizados naquele determinado projeto.
-
-Muitas vezes, no curso de um *script*, é possível instalar uma dependência utilizando o ```pip install {nome do pacote}```, porém o arquivo *requirements.txt* se faz fundamental quando os projetos serão acessados por aplicações, tais como ***Django***, ***Flask***, ***Heroku*** e ***MyBinder***, por exemplo, sendo esse o motivo principal para criar esse arquivo.
-
-## *Pip Freeze*
-
-O comando ```pip freeze``` é o mais difundido na internet para se obter os *requirements.txt*, ou seja, o arquivo com o qual é possível indicar quais os *packages* (ou pacotes) necessários para rodar um determinado *script*. O problema é que ele não lista **APENAS** os *packages* utilizados em um determinado *script*, listando **TODOS** os pactos de instalados no Python.
-
-Particularmente eu utilizo *enviroments* do Conda, com dezenas de pacotes instalados em cada *enviroments*, e os arquivos *requirements.txt* ficavam imensos, com diversos problemas.
-
-```python
-#pip freeze > requirements.txt
-```
-
-## *Pipreqs*
-
-O pacote [**pipreqs**](https://pypi.org/project/pipreqs/), pelas descrições, pareceu atender a demanda de lista **APENAS** os pacotes de um determinado projeto. Porém ele não funciona diretamente no *Juptyter Notebook*, motivo que foi preciso inserir um ponto de exclamação no início do comando, para que o *Juptyter Notebook* interpretasse que se trata de um comando a ser feito em bash.
-
-```python
-!pipreqs 'docs' --force --debug --print
-```
-
-## *Enviromental.yml*
-
-Descobri ainda que o comando ``` conda env export > environment.yml``` pode auxiliar na criação destes parâmetros, não sendo exatamente o que se busca, ou seja, o arquivo *requirements.txt* necessário para aplicações.
-
-```python
-#!conda env export > environment.yml
 ```
 
 # Erros

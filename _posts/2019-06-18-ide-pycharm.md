@@ -1,6 +1,8 @@
 ---
-title: "PyCharm e Miniconda"
+title: "IDE: PyCharm"
+excerpt_separator: "<!--more-->"
 tags: [linux, git, github, gitpages, python, pycharm, anaconda, miniconda]
+
 #layout: post
 #subtitle: Escrevendo scripts Python com auxílio do PyCharm, Miniconda e Jupyter
 #thumbnail-img: /assets/img/posts/py_icon.png
@@ -12,6 +14,8 @@ tags: [linux, git, github, gitpages, python, pycharm, anaconda, miniconda]
 ---
 
 O **<a title="Link do PyCharm" href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a>** é um ambiente de desenvolvimento integrado (ou IDE, do inglês '_Integrated Development Environment_') usado em programação de computadores, especificamente para a linguagem **<a title="Link do Python" href="https://www.python.org/" target="_blank">Python</a>**.
+
+<!--more-->
 
 {: .box-warning}
 **Aviso:** Esse _post_ tem a finalidade de mostrar os comandos básicos e me deixar com uma "cola" rápida para meu uso cotidiano. Todas os códigos são exemplificativos e podem/devem ser alterados, indicando o nome dos arquivos e diretórios corretamente.

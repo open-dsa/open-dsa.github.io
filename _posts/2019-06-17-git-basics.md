@@ -1,6 +1,8 @@
 ---
-title: "Git Basics"
+title: "Git no Ubuntu"
+excerpt_separator: "<!--more-->"
 tags: [linux, git, github, gitpages]
+
 #layout: post
 #subtitle: Comandos Básicos para atualizar repositórios do GitHub
 #thumbnail-img: /assets/img/posts/github_icon.png
@@ -11,6 +13,10 @@ tags: [linux, git, github, gitpages]
 
 ---
 
+[Git](https://git-scm.com/) é um sistema de controle de versão distribuído gratuito e de código aberto projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.
+
+<!--more-->
+
 O **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>** é uma plataforma de hospedagem de código-fonte com controle de versão usando o **<a title="Link do Git" href="https://git-scm.com/" target="_blank">Git</a>**. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou _Open Source_ de qualquer lugar do mundo.
 
 A alteração/contribuição em um dado projeto se dá por meio do comando **_commit_**, ou seja, o ato de fazer um _upload_ dos códigos para um repositório.
@@ -18,13 +24,37 @@ A alteração/contribuição em um dado projeto se dá por meio do comando **_co
 {: .box-warning}
 **Aviso:** Esse _post_ tem a finalidade de apresentar __apenas__ os comandos básicos e me deixar com uma "cola" rápida para meu uso cotidiano. Logo, todos os códigos são exemplificativos e podem/devem ser alterados, indicando o nome dos arquivos e diretórios corretamente.
 
+{: .box-error}
+**Informações:** Existem muitos outros comandos existentes a serem aprendidos que ainda não utilizei. Toda a discussão sobre _branchs_..., aplicação do comando **_add_** apenas aos arquivos alterados, evitando o **_git add --all_**. Aqui sintetizei apenas o conhecimento adquirido até o momento que venho utilizando em meus repositórios.
 
 
-[TOC]
+
+### Instalando
+
+Inicialmente é interessante avaliar se o git já não está instalado!
+
+```bash
+git --version
+```
+
+Se receber um resultado semelhante ao seguinte, o Git já está instalado.
+
+```bash
+# Output
+git version 2.25.1
+```
+
+Senão receber tal mensagem, é necessário instaalr
+
+```bash
+sudo apt update && sudo apt install git
+```
 
 
 
-## Definindo Configurações Iniciais
+### Configurações Iniciais
+
+Uma vez instalado é necessário configura-lo, definindo o usuário e e-mail.
 
 ```bash
 git config --global user.name "michelmetran"
@@ -33,7 +63,19 @@ git config --global user.email "michelmetran@gmail.com"
 
 
 
-## Criar um novo Repositório no PC local
+É possível checar as informações com o comando
+
+```bash
+git config --list
+```
+
+
+
+Este comando apresenta o conteúdo do arquivo ```~/.gitconfig``` e é possível editado diretamente por meio do ```sudo gedit ~/.gitconfig``` 
+
+
+
+### Criar um novo Repositório no PC local
 Para criar um repositório, a ser enviado posteriormente para o **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>** (ou qualquer outro serviço para hospedar códigos) é necessário iniciar o *git*, ou seja, o versionamento, em um dado diretório. Para isso basta cria-lo, acessa-lo e iniciá-lo.
 ~~~bash
 cd /home/michel/Geodata/SourceCode/
@@ -44,9 +86,11 @@ git init
 ~~~
 
 
-## Clonar (_ou copiar_) um Repositório existente
 
-### ... do GitHub para o PC local
+### Clonar (_ou copiar_) um Repositório existente
+
+#### ... do GitHub para o PC local
+
 Basta acessar a basta aonde estão listados os diretórios e dar o comando ***clone***.
 
 Isso deve ser feito no por meio do comando genérico *git clone /caminho/para/o/repositório* ou, quando em um servidor, o comando será *git clone usuário@servidor:/caminho/para/o/repositório*.
@@ -61,17 +105,17 @@ git clone git@github.com:michelmetran/ArcGIS-IGC.git
 git clone git@github.com:michelmetran/ArcGIS-Convert.git
 git clone git@github.com:michelmetran/ArcGIS-SiCAR.git
 ~~~
-<br>
 
-### ... do PC local para o PC local
+
+#### ... do PC local para o PC local
 
 ~~~bash
 cd /home/michel/Geodata
 git clone /home/michel/Geodata/SourceCode/jekyll
 ~~~
-<br>
 
-## Atualizar repositório remoto
+
+### Atualizar repositório remoto
 
 Inicialmente vá até o diretório local que tem os arquivos a serem enviados para o **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>**. No meu caso _/home/michel/Geodata/SourceCode/{Nome do Repositório}_.
 ~~~bash
@@ -102,7 +146,7 @@ git add {filename}
 
 
 
-## Atualizar o repositório local
+### Atualizar o repositório local
 É possível fazer o **_download_** dos arquivos do **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>**, atualizando o repositório local. Isso é útil quando são realizadas modificações nos arquivos por outros meios (diretamente pelo **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>**, por meio do **<a title="Link do StackEdit" href="https://stackedit.io/" target="_blank">StackEdit</a>** ou qualquer outro editor _online_, por exemplo).
 ~~~bash
 git pull origin master
@@ -110,7 +154,7 @@ git pull origin master
 
 
 
-## Outros
+### Outros
 
 ```bash
 # Status do repositório
@@ -156,14 +200,14 @@ O que é executado com o comando git remote add origin? Conectar meu repositóri
 
 
 
-## Branching
+### Branching
 
 ```bash
 # Para listar branchs e ver qual está ativa
 git branch
 ```
 
-## 
+
 
 ```bash
 # Para criar uma branch
@@ -196,7 +240,6 @@ git merge {nome da branch a unificar na branch ativa}
 
 
 
+**Referências:**
 
-
-{: .box-error}
-**Informações:** Existem muitos outros comandos existentes a serem aprendidos que ainda não utilizei. Toda a discussão sobre _branchs_..., aplicação do comando **_add_** apenas aos arquivos alterados, evitando o **_git add --all_**. Aqui sintetizei apenas o conhecimento adquirido até o momento que venho utilizando em meus repositórios.
+- [LinuxHint: **Install Git in Ubuntu 20.04**](https://linuxhint.com/git-source-code-management-system/)
