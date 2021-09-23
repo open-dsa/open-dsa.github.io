@@ -40,7 +40,7 @@ Particularmente eu utilizo *enviroments* do Conda, com dezenas de pacotes instal
 O pacote [**pipreqs**](https://pypi.org/project/pipreqs/), pelas descrições, pareceu atender a demanda de lista **APENAS** os pacotes de um determinado projeto. Porém ele não funciona diretamente no *Juptyter Notebook*, motivo que foi preciso inserir um ponto de exclamação no início do comando, para que o *jupyter* interpretasse que se trata de um comando a ser feito em *bash*.
 
 ```python
-!pipreqs 'docs' --force --debug --print
+!pipreqs '.' --force --debug --print
 ```
 
 
