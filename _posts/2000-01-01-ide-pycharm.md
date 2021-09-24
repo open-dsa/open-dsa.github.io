@@ -22,12 +22,23 @@ O **<a title="Link do PyCharm" href="https://www.jetbrains.com/pycharm/" target=
 
 <br>
 
-## Instalando o _PyCharm_ no Ubuntu 18.04
-Executei os procedimentos detalhados em uma página da _internet_[^1]. Simplificando ao máximo, basta aplicar o comando abaixo no terminal.
+### Instalando o *PyCharm Community* no Ubuntu
+Executei os procedimentos detalhados em aqui [How to Install PyCharm on Ubuntu 18.04](https://linuxize.com/post/how-to-install-pycharm-on-ubuntu-18-04/).
+
+Simplificando ao máximo, basta aplicar o comando abaixo no terminal.
+
 ~~~bash
 sudo snap install pycharm-community --classic
 ~~~
 
-[^1]: Disponível em [How to install PyCharm on Ubuntu 18.04](https://linuxize.com/post/how-to-install-pycharm-on-ubuntu-18-04/). Acessado em Junho/2019.
+[Conda Enviroments with Jupyter Notebooks Kernels](https://www.youtube.com/watch?v=Ro9l0eapoJU)
 
-[^4]: Disponível em [Conda Enviroments with Jupyter Notebooks Kernels](https://www.youtube.com/watch?v=Ro9l0eapoJU). Acessado em Junho/2019.
+
+
+
+### Instalando o *PyCharm Professional* no Ubuntu
+
+```bash
+sudo snap install pycharm-professional --classic
+```
+

@@ -75,6 +75,43 @@ Este comando apresenta o conteúdo do arquivo ```~/.gitconfig``` e é possível 
 
 
 
+### Github
+
+```shell
+ssh-keygen -t rsa -b 4096 -C "michelmetran@gmail.com"
+```
+
+<br>
+
+**Referências**
+
+- [Installing and using Git and GitHub on Ubuntu Linux: A beginner's guide](https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu/)
+- [Gerar uma nova chave SSH e adicioná-la ao ssh-agent](https://help.github.com/pt/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+
+
+
 ### Criar um novo Repositório no PC local
 Para criar um repositório, a ser enviado posteriormente para o **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>** (ou qualquer outro serviço para hospedar códigos) é necessário iniciar o *git*, ou seja, o versionamento, em um dado diretório. Para isso basta cria-lo, acessa-lo e iniciá-lo.
 ~~~bash

@@ -1,5 +1,5 @@
 ---
-title: "Jupyter Notebook e Jupter Lab"
+title: "IDE: Jupyter Notebook e Jupyter Lab"
 excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package]
 
