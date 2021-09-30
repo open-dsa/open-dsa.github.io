@@ -107,7 +107,7 @@ defaults:
       path: "_posts"
       type: posts
     values:
-      layout: wide
+      layout: single
       author_profile: true
       read_time: true
       comments: true
