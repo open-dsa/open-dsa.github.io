@@ -51,12 +51,6 @@ Comandos para *PostgreSQL* instalado via repositórios do Ubuntu
 
 
 
-
-
-https://www.tecmint.com/install-postgresql-and-pgadmin-in-ubuntu/
-
-
-
 ## Start / Stop
 
 ```bash
